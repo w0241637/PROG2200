@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<!-- https://www.w3schools.com/js/js_json_intro.asp -->
+<html>
+<title>JSON Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<body>
+
+<h2>Convert a string written in JSON format, into a JavaScript object.</h2>
+
+<p id="id"></p>
+<p id="content"></p>
+
+<script>
+    var myJSON = '{"id":1, "content":"Hello from Russ"}';
+    var myObj = JSON.parse(myJSON);
+    document.getElementById("id").innerHTML = myObj.id;
+    document.getElementById("content").innerHTML = myObj.content;
+</script>
+
+</body>
+</html>

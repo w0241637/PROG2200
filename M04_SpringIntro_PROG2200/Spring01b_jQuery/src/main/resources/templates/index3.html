@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JSON Data</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+
+<h2>Retrieve JSON data from URL.</h2>
+
+<p id="id"></p>
+<p id="content"></p>
+
+<script>
+    var xmlhttp = new XMLHttpRequest();
+    var url = "http://localhost:8081/greeting";
+    //var url = "http://172.16.176.xxx:8081/greeting";
+
+
+    xmlhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+
+            alert("JSON=>" + this.responseText);
+            console.log("JSON=>" + this.responseText);
+
+            obj = JSON.parse(this.responseText);
+            document.getElementById("id").innerHTML = obj.id;
+            document.getElementById("content").innerHTML = obj.content;
+
+        }
+    };
+    xmlhttp.open("GET", url, true);
+    xmlhttp.send();
+
+</script>
+
+</body>
+</html>

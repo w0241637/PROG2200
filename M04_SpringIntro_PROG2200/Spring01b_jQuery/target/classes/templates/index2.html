@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!-- https://www.w3schools.com/js/js_json_intro.asp -->
+<html>
+<title>JSON Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<body>
+
+<h2>Store and retrieve data from local storage.</h2>
+
+<p id="id"></p>
+<p id="content"></p>
+
+<script>
+    var myObj, myJSON, text, obj;
+
+    // Storing data:
+    myObj = { id: 1, content: "Hello from file" };
+    myJSON = JSON.stringify(myObj);
+    localStorage.setItem("testJSON", myJSON);
+
+    // https://stackoverflow.com/questions/8634058/where-the-sessionstorage-and-localstorage-stored
+
+    // Retrieving data:
+    text = localStorage.getItem("testJSON");
+    obj = JSON.parse(text);
+    document.getElementById("id").innerHTML = obj.id;
+    document.getElementById("content").innerHTML = obj.content;
+</script>
+
+</body>
+</html>

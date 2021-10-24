@@ -1,0 +1,106 @@
+<html>
+<head>
+    <-- Creating a JSON Fetch in HTML5 -->
+    <title>JSON Fetch in HTML5</title>
+</head>
+<body>
+<h1>
+    Get a JSON object by pressing ...
+    <button onclick="fetchJSON()">Fetch</button>
+</h1>
+
+<h1>==================================</h1>
+<h1>The dump of the data</h1>
+<h2 id="dump">dump</h2>
+
+<h1>==================================</h1>
+<h1>The parsed JSON object pulling out particular values</h1>
+<h2 id="data">data</h2>
+
+<h1>==================================</h1>
+<h1>Random Number</h1>
+<h2 id="randNum">randNumberHere</h2>
+
+
+<script type="text/javascript">
+    function fetchJSON() {
+        // We call the Web Service via AJAX
+        var xmlhttp = new XMLHttpRequest();
+        // var url = "https://api.chucknorris.io/jokes/random";
+        var url = "http://localhost:8081/greeting"
+        xmlhttp.onreadystatechange = function() {
+            if(this.readyState == 4 && this.status == 200) {
+                var json = JSON.parse(this.responseText);
+
+                // dump raw JSON Data
+                document.getElementById("dump").innerHTML = this.responseText.toString();
+
+                // We parse the JSON response
+                parseJson(json);
+               parseJson2(json);
+                // setInterval(json);
+            }
+        };
+
+        xmlhttp.open("GET", url, true);
+        xmlhttp.send();
+    }
+
+    function parseJson(json) {
+        var fact1 = "<b>" + json["id"] + "</b>";
+        var fact2 = "<b>" + json["content"] + "</b>";
+        var fact3 = "<b>" + json["random_number"] + "</b>";
+
+        document.getElementById("data").innerHTML = fact1 + " ####" + fact2 + fact3;
+    }
+
+
+    function parseJson2(json) {
+        var fact4 = "<b>" + json["random_number"] + "</b>";
+
+        document.getElementById("randNum").innerHTML = fact4;
+    }
+
+
+    // setInterval(function randomNumber (json){
+    //     var fact4 = "<b>" + json["id"] + "</b>";
+    //     document.getElementById("randNum").innerHTML = fact4;
+    //
+    // }, 1000);
+
+
+    setInterval(function(){
+
+
+        var xmlhttp = new XMLHttpRequest();
+
+
+        var url = "http://localhost:8081/greeting"
+        xmlhttp.onreadystatechange = function() {
+            if(this.readyState == 4 && this.status == 200) {
+                var json = JSON.parse(this.responseText);
+
+                // dump raw JSON Data
+                var fact4 = "<b>" + json["random_number"] + "</b>";
+                var fact5 = "<b>" + json["total"] + "</b>";
+
+
+                document.getElementById("randNum").innerHTML ="Tim's random number: " + fact4 +"Tim's total web hits: "+ fact5;
+
+            }
+        };
+
+        xmlhttp.open("GET", url, true);
+        xmlhttp.send();
+
+
+    }, 1000);
+
+
+
+
+
+    fetchJSON();
+</script>
+</body>
+</html>
