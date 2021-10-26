@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Handling Form Submission</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+
+
+<!-- Get session var
+     https://www.thymeleaf.org/doc/tutorials/3.0/usingthymeleaf.html#expression-basic-objects -->
+<div th:object="${session.sessionGreeting}">
+    <p>Name: <span th:text="*{id}">Sebastian</span>.</p>
+    <p>Surname: <span th:text="*{content}">Pepper</span>.</p>
+</div>
+
+
+<!-- Get session var
+     https://www.thymeleaf.org/doc/tutorials/3.0/usingthymeleaf.html#expression-basic-objects -->
+<p th:text="'id: ' + ${session.sessionGreeting.id}" />
+<p th:text="'content: ' + ${session.sessionGreeting.content}" />
+
+
+<h1>Form</h1>
+<form action="#" th:action="@{/greeting2}" th:object="${greeting}" method="post">
+    <p>Id: <input type="text" th:field="*{id}" /></p>
+    <p>Message: <input type="text" th:field="*{content}" /></p>
+
+    <p>guess a number: <input type="text" th:field="*{userGuess}" /></p>
+
+    <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+</form>
+
+
+
+
+
+
+</body>
+</html>

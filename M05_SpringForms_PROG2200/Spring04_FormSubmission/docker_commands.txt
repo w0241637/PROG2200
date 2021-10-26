@@ -1,0 +1,28 @@
+#
+# Handy set of docker commands to build/run
+#
+# Steps (refer to movie)
+#   1) Install Docker  - https://docs.docker.com/docker-for-windows/install/
+    2) Maven Install:  Project=> Run As => Maven Install  (this creates target dir with jar file from the project)
+#   3) git bash (or other term) in root project dir (with the Dockerfile)
+#   4) build and run the instance with port mapping to host from docker instance
+#   5) use stop/start to control existing container
+#   6) use ps to get docker ID (for use in start/stop)
+#   7) if you "run" again, you make a new instance (waste RAM/CPU/Disk...)
+#   8) (your running app) = (base docker image) + (your app.jar) ... on any platform
+#
+# general docker commands
+docker --version
+docker ps -a   # list all running/not running containers
+
+# docker build/run command tags name per this project
+docker build -t spring04_formsubmission .
+docker run -dp 8081:8081 spring04_formsubmission   
+
+# docker start/stop (you'll need to use ps to get Docker ID
+docker container stop xxxxxxxxxx  # get ID from ps command
+docker container start xxxxxxxxxx
+
+#  DO NOT REPEAT THE RUN!!  Unless you delete ...you will be making multiple instances!
+
+

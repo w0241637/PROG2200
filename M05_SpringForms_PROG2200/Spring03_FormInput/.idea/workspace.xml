@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f7407170-efba-4e83-af52-9375630f94ae" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../Spring01_REST/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Spring01a_REST/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Spring01b_jQuery/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Spring02_WebMVC/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Spring04_FormSubmission/.idea/Spring04_FormSubmission.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Spring04_FormSubmission/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Eclipse_WS/.idea/Eclipse_WS.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Eclipse_WS/M01.5_Threads_PROG2200/M01.5_Threads_PROG2200.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Eclipse_WS/M01.5_Threads_PROG2200/src/synchMethods/notsynched/Dorthy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Eclipse_WS/M01.5_Threads_PROG2200/src/synchMethods/notsynched/thread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Eclipse_WS/M01.5_Threads_PROG2200/src/synchMethods/notsynched/threadMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Eclipse_WS/M01.5_Threads_PROG2200/src/synchMethods/synch/Data.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Eclipse_WS/M01.5_Threads_PROG2200/src/synchMethods/synch/thread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Eclipse_WS/M01.5_Threads_PROG2200/src/synchMethods/synch/threadMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Eclipse_WS/M01_Collections_PROG2200/M01_Collections_PROG2200.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Eclipse_WS/Module_07_Threads/Module_07_Threads.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring01_REST/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring01_REST/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring01_REST/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring01_REST/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring01_REST/src/main/java/hello/GreetingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring01_REST/src/main/java/hello/GreetingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring01a_REST/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring01a_REST/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring01a_REST/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring01a_REST/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring01a_REST/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring01a_REST/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring01a_REST/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring01a_REST/app.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring01a_REST/src/main/java/hello/Greeting.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring01a_REST/src/main/java/hello/Greeting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring01a_REST/src/main/java/hello/GreetingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring01a_REST/src/main/java/hello/GreetingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring01b_jQuery/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring01b_jQuery/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring01b_jQuery/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring01b_jQuery/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring01b_jQuery/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring01b_jQuery/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring01b_jQuery/HTML/jsonfetch.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring01b_jQuery/HTML/jsonfetch.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring01b_jQuery/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring01b_jQuery/app.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring01b_jQuery/src/main/java/hello/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring01b_jQuery/src/main/java/hello/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring01b_jQuery/src/main/java/hello/Greeting.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring01b_jQuery/src/main/java/hello/Greeting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring01b_jQuery/src/main/java/hello/GreetingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring01b_jQuery/src/main/java/hello/GreetingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring02_WebMVC/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring02_WebMVC/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring02_WebMVC/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring02_WebMVC/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring02_WebMVC/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring02_WebMVC/app.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring02_WebMVC/src/main/java/hello/GreetingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring02_WebMVC/src/main/java/hello/GreetingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring02_WebMVC/src/main/resources/templates/greeting.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring02_WebMVC/src/main/resources/templates/greeting.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/app.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hello/PersonForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/PersonForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hello/WebController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/WebController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/form.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/results.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/results.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring04_FormSubmission/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring04_FormSubmission/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring04_FormSubmission/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring04_FormSubmission/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring04_FormSubmission/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring04_FormSubmission/app.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring04_FormSubmission/src/main/java/hello/Greeting.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring04_FormSubmission/src/main/java/hello/Greeting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring04_FormSubmission/src/main/java/hello/GreetingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring04_FormSubmission/src/main/java/hello/GreetingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring04_FormSubmission/src/main/resources/templates/greeting.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring04_FormSubmission/src/main/resources/templates/greeting.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring04_FormSubmission/src/main/resources/templates/greeting2.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring04_FormSubmission/src/main/resources/templates/greeting2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring04_FormSubmission/src/main/resources/templates/result2.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring04_FormSubmission/src/main/resources/templates/result2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../IntelliJ_WS/Game_02/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../IntelliJ_WS/Game_02/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../IntelliJ_WS/Game_03/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../IntelliJ_WS/Game_03/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../IntelliJ_WS/Game_03/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../IntelliJ_WS/Game_03/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1SvKIjcXuwE2aViGQ7cka5luj4x" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/templates" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="restartRequiresConfirmation" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/templates" />
+      <recent name="G:\INET2005\Spring_Boot\Spring03_FormInput\src\main\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="hello" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Application">
+    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hello.Application" />
+      <module name="Spring03_FormInput" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hello.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="Spring03_FormInput" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="hello.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Application" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f7407170-efba-4e83-af52-9375630f94ae" name="Default Changelist" comment="" />
+      <created>1562618657559</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1562618657559</updated>
+      <workItem from="1562618661711" duration="5252000" />
+      <workItem from="1572298753514" duration="1398000" />
+      <workItem from="1572438552994" duration="2309000" />
+      <workItem from="1572522611298" duration="31000" />
+      <workItem from="1635116613395" duration="2919000" />
+      <workItem from="1635160113383" duration="13619000" />
+      <workItem from="1635272647037" duration="2493000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>9</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
