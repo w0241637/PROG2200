@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Handling Form Submission</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>Result</h1>
+
+
+
+<p th:text="'bad guesses: ' + ${session.sessionGreeting.totalGuesses}" />
+<!--<p th:text="'bad guesses: ' + ${greeting.totalGuesses}" />-->
+
+
+<a href="/greeting2">Play again?</a>
+</body>
+</html>

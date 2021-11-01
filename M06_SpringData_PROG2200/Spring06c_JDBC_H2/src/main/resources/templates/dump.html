@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Handling Form Submission</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+</head>
+<body>
+<h1>Full DB Dump</h1>
+
+<table>
+    <tr>
+        <th>Session</th>
+        <th>Win/Lose</th>
+        <th>Number to guess</th>
+        <th>Number of guesses</th>
+
+    </tr>
+    <tr th:if="${carModels.empty}">
+        <td colspan="2"> No Books Available</td>
+    </tr>
+    <tr th:each="carModel : ${carModels}">
+        <td><span th:text="${carModel.id}"> Title </span></td>
+        <td><span th:text="${carModel.winLose}"> Author </span></td>
+        <td><span th:text="${carModel.numToGuess}"> Author </span></td>
+        <td><span th:text="${carModel.numOfGuesses}"> Author </span></td>
+    </tr>
+</table>
+
+<!--<a href="/car">Submit another message</a>-->
+</body>
+</html>
+
