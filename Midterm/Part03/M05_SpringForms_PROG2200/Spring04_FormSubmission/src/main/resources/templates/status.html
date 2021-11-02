@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Handling Form Submission</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h4>um</h4>
+
+<!-- Get session var
+     https://www.thymeleaf.org/doc/tutorials/3.0/usingthymeleaf.html#expression-basic-objects -->
+
+
+
+<!-- Get session var
+     https://www.thymeleaf.org/doc/tutorials/3.0/usingthymeleaf.html#expression-basic-objects -->
+
+
+
+<p th:text="'the person who won the last game was: ' + ${session.sessionGreeting.lastWinner}" />
+
+<h3>Full output:</h3>
+<p th:text="'session.sessionGreeting.id: ' + ${session.sessionGreeting.id}" />
+<p th:text="'session.sessionGreeting.content: ' + ${session.sessionGreeting.content}" />
+<p th:text="'unused session.sessionGreeting.numToGuess: ' + ${session.sessionGreeting.numToGuess}" />
+<p th:text="'session.sessionGreeting.userGues: ' + ${session.sessionGreeting.userGuess}" />
+<p th:text="'session.sessionGreeting.totalGuesses: ' + ${session.sessionGreeting.totalGuesses}" />
+<p th:text="'session.sessionGreeting.randNum: ' + ${session.sessionGreeting.randNum}" />
+<p th:text="'session.sessionGreeting.lastWinner: ' + ${session.sessionGreeting.lastWinner}" />
+
+<p th:text="'greeting.id: ' + ${greeting.id}" />
+<p th:text="'greeting.content: ' + ${greeting.content}" />
+<p th:text="'greeting.numToGuess: ' + ${greeting.numToGuess}" />
+<p th:text="'greeting.userGuess: ' + ${greeting.userGuess}" />
+<p th:text="'greeting.totalGuesses: ' + ${greeting.totalGuesses}" />
+<p th:text="'greeting.randNum: ' + ${greeting.randNum}" />
+<p th:text="'greeting.lastWinner: ' + ${greeting.lastWinner}" />
+
+<a href="/greeting2">back</a>
+</body>
+</html>

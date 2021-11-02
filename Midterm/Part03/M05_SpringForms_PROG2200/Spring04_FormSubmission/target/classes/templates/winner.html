@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Handling Form Submission</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>WINNER</h1>
+
+<!-- Get session var
+     https://www.thymeleaf.org/doc/tutorials/3.0/usingthymeleaf.html#expression-basic-objects -->
+
+
+
+<!-- Get session var
+     https://www.thymeleaf.org/doc/tutorials/3.0/usingthymeleaf.html#expression-basic-objects -->
+
+
+<p th:text="'bad guesses: ' + ${session.sessionGreeting.totalGuesses}" />
+
+
+
+<a href="/greeting2">Submit another message</a>
+
+<a href="/greeting2">Play again?/a>
+</body>
+</html>
