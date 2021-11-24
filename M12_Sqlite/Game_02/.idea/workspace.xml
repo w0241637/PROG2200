@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9c2b5b44-c539-4641-9b74-fb43df6ce2d1" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit3 Test Class" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>render</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="1RQGnXLfVnRC4Z4YQbMOvaopjla" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="hsqldb" />
+    <property name="Downloaded.Files.Path.Enabled" value="true" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550235680874" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit3" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit3" value="junit.framework.TestCase" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../PROG2200/lib/sqlite-jdbc-3.36.0.3.jar" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="ReaderModeSettings">
+    <option name="enabled" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\git\PROG1400\Idea_WS\Game_02\src\main\resources\models\russ" />
+      <recent name="C:\Idea\russgl2\src\main\java\org\lwjglb" />
+      <recent name="C:\Idea\russgl2\src\main\java\org\lwjgl" />
+      <recent name="C:\Idea\russgl2\src\main" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\git\PROG1400\Idea_WS\Game_02\src\main\resources\models\russ" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="junit.framework.TestCase" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="org.lwjglb.engine.items" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.lwjglb.game" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="BUNDLED" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="org.lwjglb.game.Main" />
+      <module name="Game_02" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.lwjgl.game.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="org.lwjglb.game.Main" />
+      <module name="Game_02" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.lwjglb.game.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Testdb" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.lwjglb.game.Testdb" />
+      <module name="Game_02" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.lwjglb.game.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="dbHelper" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.lwjglb.game.dbHelper" />
+      <module name="Game_02" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.lwjglb.game.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Vehicle02Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Game_02" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.lwjglb.engine.items.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.lwjglb.engine.items" />
+      <option name="MAIN_CLASS_NAME" value="org.lwjglb.engine.items.Vehicle02Test" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Vehicle02Test.testDoesItCollide09" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Game_02" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.lwjglb.engine.items.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.lwjglb.engine.items" />
+      <option name="MAIN_CLASS_NAME" value="org.lwjglb.engine.items.Vehicle02Test" />
+      <option name="METHOD_NAME" value="testDoesItCollide09" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.dbHelper" />
+        <item itemvalue="Application.Testdb" />
+        <item itemvalue="JUnit.Vehicle02Test" />
+        <item itemvalue="JUnit.Vehicle02Test.testDoesItCollide09" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9c2b5b44-c539-4641-9b74-fb43df6ce2d1" name="Default Changelist" comment="" />
+      <created>1544397658987</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1544397658987</updated>
+      <workItem from="1569592081441" duration="159000" />
+      <workItem from="1570195365781" duration="71000" />
+      <workItem from="1570199799725" duration="709000" />
+      <workItem from="1570210410409" duration="912000" />
+      <workItem from="1570534231169" duration="3608000" />
+      <workItem from="1571399780676" duration="1522000" />
+      <workItem from="1571408590285" duration="1901000" />
+      <workItem from="1571745601567" duration="6731000" />
+      <workItem from="1572268512485" duration="60000" />
+      <workItem from="1572278595803" duration="34000" />
+      <workItem from="1599838447969" duration="178000" />
+      <workItem from="1599844039879" duration="53000" />
+      <workItem from="1601400824964" duration="36000" />
+      <workItem from="1601400935337" duration="2259000" />
+      <workItem from="1601404869742" duration="466000" />
+      <workItem from="1601405371119" duration="1383000" />
+      <workItem from="1601406789994" duration="935000" />
+      <workItem from="1614188556377" duration="281000" />
+      <workItem from="1614189006319" duration="71000" />
+      <workItem from="1614189608007" duration="1289000" />
+      <workItem from="1614191179969" duration="65000" />
+      <workItem from="1614195370237" duration="25000" />
+      <workItem from="1614201955921" duration="714000" />
+      <workItem from="1614553777359" duration="1510000" />
+      <workItem from="1614619443806" duration="8465000" />
+      <workItem from="1614714190085" duration="15043000" />
+      <workItem from="1614800696696" duration="10116000" />
+      <workItem from="1615163029767" duration="3441000" />
+      <workItem from="1615221949926" duration="29231000" />
+      <workItem from="1615296914647" duration="994000" />
+      <workItem from="1615307794509" duration="2947000" />
+      <workItem from="1617932734809" duration="200000" />
+      <workItem from="1632699488193" duration="114000" />
+      <workItem from="1633037128971" duration="13993000" />
+      <workItem from="1633181633099" duration="11913000" />
+      <workItem from="1633616574956" duration="9860000" />
+      <workItem from="1634040192695" duration="20499000" />
+      <workItem from="1634083293221" duration="2607000" />
+      <workItem from="1634162749177" duration="479000" />
+      <workItem from="1634163305156" duration="370000" />
+      <workItem from="1634321990863" duration="56000" />
+      <workItem from="1635858527358" duration="4220000" />
+      <workItem from="1635863427224" duration="1203000" />
+      <workItem from="1636501891097" duration="4936000" />
+      <workItem from="1636567480236" duration="2262000" />
+      <workItem from="1636658672792" duration="10571000" />
+      <workItem from="1636737234723" duration="1583000" />
+      <workItem from="1636739344309" duration="6611000" />
+      <workItem from="1637241505087" duration="3116000" />
+      <workItem from="1637366945252" duration="3848000" />
+      <workItem from="1637501179096" duration="16678000" />
+      <workItem from="1637587276649" duration="25462000" />
+      <workItem from="1637717355769" duration="3016000" />
+      <workItem from="1637768518618" duration="1813000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>
