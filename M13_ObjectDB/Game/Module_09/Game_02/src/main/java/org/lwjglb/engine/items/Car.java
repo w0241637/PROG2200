@@ -37,12 +37,29 @@ public class Car extends Vehicle02 {
     public String objType = "Car";
 
 
+
+    public Car(){}
+
     public Car(Mesh[] addMesh){
         super(addMesh);
         setPosition(nextFloatRange(10.00f, -10.0f), -15.000f, nextFloatRange(10.00f, -10.0f));
         setVelocity(0.006f * nextFloatRange(1f, -1f), 0.000001f, 0.006f * nextFloatRange(1f, -1f));
-
+        try {
+            setMeshes(StaticMeshesLoader.load("src/main/resources/models/russ/Chevrolet_Camaro_SS_Low.obj", "src/main/resources/models/russ"));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
+
+    public void setDefaultMesh() {
+        try {
+            setMeshes(StaticMeshesLoader.load("src/main/resources/models/russ/Chevrolet_Camaro_SS_Low.obj", "src/main/resources/models/russ"));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+
 
 //    public void run() {
 //        System.out.println("Running Shape...");
@@ -76,6 +93,14 @@ public class Car extends Vehicle02 {
 //        this.position.y = this.position.y + 0.2f;
         System.out.println("Cars can't fly!");
     }
+
+//    public void getDefaultMesh() {
+//        try {
+//            this.setMeshes(StaticMeshesLoader.load("src/main/resources/models/russ/Chevrolet_Camaro_SS_Low.obj", "src/main/resources/models/russ"));
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
+//    }
 
 //    public void down() {
 //        this.position.y = this.position.y - 0.2f;

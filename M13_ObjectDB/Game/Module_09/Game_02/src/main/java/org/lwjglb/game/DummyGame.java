@@ -350,6 +350,8 @@ dbHelper02.createTable();
         if (GameGUI.getClearCommand()) {
             try {
                 //todo delete db contents
+                ManageJDO01 g = new ManageJDO01("Shapes01.odb");
+                g.emptyDB(Vehicle02.class);
                 dbHelper02.deleteAllRows();
             } catch (SQLException e) {
                 e.printStackTrace();
@@ -549,12 +551,13 @@ dbHelper02.createTable();
             shape.setRotationVel(new Quaternionf(0.06f * r.nextFloat(), 0.08f * r.nextFloat(), 0.09f * r.nextFloat(), 0.0f));
             scene.addGameItem(shape);
 
-//                        Vehicle02 v1 = new Vehicle02("Vehicle02",1,2,3,4,5,6);
+//                        Vehicle02 v1 = new Vehicle02("Vehicle02",1f,2f,3f,4f,5f,6f);
 //            g.saveNew(v1);
 //            g.saveNew(shape);
-            dbItems.add(shape);
             dbObjects.add(shape);
-//            g.close();
+//            dbObjects.add(v1);
+            g.close();
+            dbItems.add(shape);
 
         } catch (Exception e) {
             e.printStackTrace();
@@ -565,6 +568,9 @@ dbHelper02.createTable();
 //    Add Car
     public void addCarMeshOnScreen() {
         try {
+//            ManageJDO01 g = new ManageJDO01("Shapes01.odb");
+
+
             Mesh[] addMesh = StaticMeshesLoader.load("src/main/resources/models/russ/Chevrolet_Camaro_SS_Low.obj", "src/main/resources/models/russ");
             Car carShape = new Car(addMesh);
             carShape.setScale(0.10f);
@@ -572,6 +578,7 @@ dbHelper02.createTable();
             scene.addGameItem(carShape);
 
             dbItems.add(carShape);
+            dbObjects.add(carShape);
 
 
         } catch (Exception e) {
@@ -596,6 +603,7 @@ dbHelper02.createTable();
             scene.addGameItem(Planeshape);
 
             dbItems.add(Planeshape);
+            dbObjects.add(Planeshape);
 
 
         } catch (Exception e) {
@@ -617,6 +625,7 @@ dbHelper02.createTable();
             scene.addGameItem(cycleShape);
 
             dbItems.add(cycleShape);
+            dbObjects.add(cycleShape);
 
 
         } catch (Exception e) {
@@ -786,34 +795,207 @@ dbHelper02.createTable();
         }
     }
 
+    //todo
     public void insertJdoObjects(){
         ManageJDO01 g = new ManageJDO01("Shapes01.odb");
 
-        for (Object objects : dbObjects){
-            g.saveNew(objects);
-            System.out.println("saved objects: "+ objects);
-        }
-    }
+        for (Vehicle02 objects : dbObjects){
 
+
+
+            if (objects.getObjType() == "Car"){
+                System.out.println("you got a car there buddy");
+                Car cube = null;
+                try {
+                    cube = new Car();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+
+                cube.setObjX(objects.getPosition().x);
+                cube.setObjY(objects.getPosition().y);
+                cube.setObjZ(objects.getPosition().z);
+                cube.setObjDx(objects.velocity.x);
+                cube.setObjDy(objects.velocity.y);
+                cube.setobjDz(objects.velocity.z);
+                g.saveNew(cube);
+
+            }
+            else if (objects.getObjType() == "Plane"){
+                System.out.println("GOT Plane");
+                Plane cube = new Plane();
+
+                cube.setObjX(objects.getPosition().x);
+                cube.setObjY(objects.getPosition().y);
+                cube.setObjZ(objects.getPosition().z);
+                cube.setObjDx(objects.velocity.x);
+                cube.setObjDy(objects.velocity.y);
+                cube.setobjDz(objects.velocity.z);
+                cube.setDefaultMesh();
+
+                g.saveNew(cube);
+            }
+            else if (objects.getObjType() == "Motorcycle"){
+                System.out.println("GOT Motorcycle");
+                Motorcycle cube = new Motorcycle();
+
+                cube.setObjX(objects.getPosition().x);
+                cube.setObjY(objects.getPosition().y);
+                cube.setObjZ(objects.getPosition().z);
+                cube.setObjDx(objects.velocity.x);
+                cube.setObjDy(objects.velocity.y);
+                cube.setobjDz(objects.velocity.z);
+                cube.setDefaultMesh();
+
+                g.saveNew(cube);
+
+            } else{
+                System.out.println("cube town baby");
+                Vehicle02 cube = new Vehicle02();
+
+                cube.setObjX(objects.getPosition().x);
+                cube.setObjY(objects.getPosition().y);
+                cube.setObjZ(objects.getPosition().z);
+                cube.setObjDx(objects.velocity.x);
+                cube.setObjDy(objects.velocity.y);
+                cube.setobjDz(objects.velocity.z);
+                cube.setDefaultMesh();
+
+                g.saveNew(cube);
+            }
+
+
+//            Vehicle02 cube = new Vehicle02("Vehicle02",objects.position.x,objects.position.y,objects.position.z,objects.velocity.x,objects.velocity.y,objects.velocity.z);
+
+            System.out.println("# saved objects: "+ objects);
+//            System.out.println("## saved objects: "+ cube);
+//
+        }
+
+
+//        Vehicle02 cube2 = new Vehicle02("Vehicle02",1f,2f,3f,4f,5f,6f);
+//        cube2.setObjX(999f);
+//        g.saveNew(cube2);
+//
+////        System.out.println("saved objects: "+ objects);
+//        System.out.println("### saved objects: "+ cube2);
+    }
+ //todo
     public void startJdoObjects(){
 
 
         ManageJDO01 g = new ManageJDO01("Shapes01.odb");
 
-
-
         List<Object> results;
         results = g.getObjects(Vehicle02.class);
         for (Object obj : results){
+            Vehicle02 obj2 = (Vehicle02) obj;
+
+            if(Objects.equals(obj2.getObjType(), "Car")){
+                System.out.println("$$$ starting Car $$$");
+                Car shape = new Car();
+                shape.setPosition(obj2.getObjX(), obj2.getObjY(), obj2.getObjZ());
+                shape.setVelocity(obj2.getObjDx(), obj2.getObjDy(), obj2.getObjDz());
+                shape.setScale(0.10f);
+                shape.setRotationVel(new Quaternionf(0.00f, 0.5f, 0.0f , 0.0f));
+                shape.setDefaultMesh();
+                scene.addGameItem(shape);
+            } else if(Objects.equals(obj2.getObjType(), "Plane")){
+                System.out.println("$$$ starting Plane  $$$");
+                Plane shape = new Plane();
+                shape.setPosition(obj2.getObjX(), obj2.getObjY(), obj2.getObjZ());
+                shape.setVelocity(obj2.getObjDx(), obj2.getObjDy(), obj2.getObjDz());
+                shape.setRotationVel(new Quaternionf(0.06f * r.nextFloat(), 0.08f * r.nextFloat(), 0.09f * r.nextFloat(), 0.0f));
+                shape.setScale(0.30f);
+                shape.setDefaultMesh();
+                scene.addGameItem(shape);
+
+            } else if(Objects.equals(obj2.getObjType(), "Motorcycle")){
+                Motorcycle cycleShape = new Motorcycle();
+                cycleShape.setScale(0.30f);
+                cycleShape.setPosition(obj2.getObjX(), obj2.getObjY(), obj2.getObjZ());
+                cycleShape.setVelocity(obj2.getObjDx(), obj2.getObjDy(), obj2.getObjDz());
+                cycleShape.setRotationVel(new Quaternionf(0.00f, 0.0f, 0.0f , 0.0f));
+                cycleShape.setDefaultMesh();
+                scene.addGameItem(cycleShape);
+
+            } else {
+                Vehicle02 shape = new Vehicle02();
+                System.out.println("$$$ starting Veh $$$");
+                shape.setPosition(obj2.getObjX(), obj2.getObjY(), obj2.getObjZ());
+                shape.setVelocity(obj2.getObjDx(), obj2.getObjDy(), obj2.getObjDz());
+                shape.setRotationVel(new Quaternionf(0.06f * r.nextFloat(), 0.08f * r.nextFloat(), 0.09f * r.nextFloat(), 0.0f));
+                shape.setDefaultMesh();
+                scene.addGameItem(shape);
+            }
+
+
+
+
+
+            g.dumpObjects(Vehicle02.class);
+
             System.out.println("obj-> "+obj+" <-obj");
+
+            System.out.println("obyType: "+obj2.getObjType());
+            System.out.println("this: "+obj2.objX);
+            System.out.println(obj2.position.x);
+            System.out.println(obj2.position.x());
+            System.out.println("x: "+obj2.getObjX());
+            System.out.println("y: "+obj2.getObjY());
+            System.out.println("z: "+obj2.getObjZ());
+            System.out.println("dx: "+obj2.getObjDx());
+            System.out.println("dy: "+obj2.getObjDy());
+            System.out.println("dz: "+obj2.getObjDz());
+
+            System.out.println(obj2.getPosition().y);
+            System.out.println(obj2.getPosition().z);
+            System.out.println(obj2.getTextPos());
+
+
+//            try {
+//                obj2.setMeshes(StaticMeshesLoader.load("src/main/resources/models/cube.obj", "src/main/resources/models"));
+//            } catch (Exception e) {
+//                e.printStackTrace();
+//            }
         }
 
         System.out.println("results here-> "+results + "<- results here!!!");
 
     }
 
+//saved if i muck up nov 29
+//    public void startJdoObjects(){
+//
+//
+//        ManageJDO01 g = new ManageJDO01("Shapes01.odb");
+//
+//
+//
+//        List<Object> results;
+//        results = g.getObjects(Vehicle02.class);
+//        for (Object obj : results){
+//            System.out.println("obj-> "+obj+" <-obj");
+//            Vehicle02 obj2 = (Vehicle02) obj;
+//            System.out.println("obyType: "+obj2.getObjType());
+//            try {
+//                obj2.setMeshes(StaticMeshesLoader.load("src/main/resources/models/cube.obj", "src/main/resources/models"));
+//            } catch (Exception e) {
+//                e.printStackTrace();
+//            }
+//        }
+//
+//        System.out.println("results here-> "+results + "<- results here!!!");
+//
+//    }
 
 
+//    List<Object> results;
+//    results = g.getObjects(Shape.class);
+//		for (Object t : results) {
+//        Thread t2 = (Thread) t;
+//        t2.start();
+//    }
 
 
 
@@ -892,7 +1074,7 @@ dbHelper02.createTable();
     @Override
     public void cleanup() {
         ManageJDO01 g = new ManageJDO01("Shapes01.odb");
-g.emptyDB(Vehicle02.class);
+//g.emptyDB(Vehicle02.class);
         try {
             insertJdoObjects();
             insertRows();

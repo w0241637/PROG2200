@@ -2,6 +2,7 @@ package org.lwjglb.engine.items;
 
 import org.joml.Vector3f;
 import org.lwjglb.engine.graph.Mesh;
+import org.lwjglb.engine.loaders.assimp.StaticMeshesLoader;
 import org.lwjglb.game.GameGUI;
 
 import javax.persistence.Entity;
@@ -9,6 +10,9 @@ import java.util.Random;
 
 @Entity
 public class Motorcycle extends Vehicle02 {
+
+    public Motorcycle(){}
+
 
 
     public static float nextFloatRange(float min, float max) {
@@ -46,6 +50,14 @@ public class Motorcycle extends Vehicle02 {
         super(addMesh);
         setPosition(nextFloatRange(10.00f, -10.0f), -15.000f, nextFloatRange(10.00f, -10.0f));
         setVelocity(0.06f * nextFloatRange(1f, -1f), 0.000001f, 0.06f * nextFloatRange(1f, -1f));
+    }
+
+    public void setDefaultMesh() {
+        try {
+            setMeshes(StaticMeshesLoader.load("src/main/resources/models/russ/Motorcycle.obj", "src/main/resources/models/russ"));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     public String getObjType() {

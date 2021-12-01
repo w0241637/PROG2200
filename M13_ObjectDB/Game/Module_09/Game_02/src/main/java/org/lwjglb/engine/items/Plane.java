@@ -1,6 +1,7 @@
 package org.lwjglb.engine.items;
 
 import org.lwjglb.engine.graph.Mesh;
+import org.lwjglb.engine.loaders.assimp.StaticMeshesLoader;
 import org.lwjglb.game.GameGUI;
 
 import javax.persistence.Entity;
@@ -34,6 +35,9 @@ public class Plane extends Vehicle02 {
 
     public String objType = "Plane";
 
+    public Plane(){}
+
+
     //nov 28
 //    public Plane(String type, float x, float y, float z, float dx, float dy, float dz) {
 //        super();
@@ -51,6 +55,13 @@ public class Plane extends Vehicle02 {
         return objType;
     }
 
+    public void setDefaultMesh() {
+        try {
+            setMeshes(StaticMeshesLoader.load("src/main/resources/models/russ/toyPlane.obj", "src/main/resources/models/russ"));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 //    public void run() {
 //        System.out.println("Running Shape...");
 //        boolean isStationary = false;

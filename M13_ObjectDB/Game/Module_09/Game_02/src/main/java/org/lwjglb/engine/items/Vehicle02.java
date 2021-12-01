@@ -5,6 +5,7 @@ import org.joml.Vector3f;
 import org.lwjglb.engine.graph.InstancedMesh;
 import org.lwjglb.engine.graph.Mesh;
 import org.lwjglb.engine.items.GameItem;
+import org.lwjglb.engine.loaders.assimp.StaticMeshesLoader;
 
 import javax.persistence.Entity;
 import java.util.ArrayList;
@@ -14,7 +15,6 @@ import java.util.Random;
 @Entity
 public class Vehicle02 extends GameItem{
     public Vehicle02() {
-
     }
 
     public Vehicle02(String objType, float x, float y, float z, float dx, float dy, float dz) {
@@ -57,11 +57,35 @@ public class Vehicle02 extends GameItem{
         return objType;
     }
 
+    public float objX,objY,objZ,objDx,objDy,objDz;
+
+
+
+//    Mesh[] addMesh = StaticMeshesLoader.load("src/main/resources/models/cube.obj", "src/main/resources/models");
+
+
     public Vehicle02(Mesh[] addMesh) {
         super(addMesh);
         setPosition(nextFloatRange(10.00f, -10.0f), 8.f, nextFloatRange(10.00f, -10.0f));
         setVelocity(0.006f * nextFloatRange(1f, -1f), 0.000001f, 0.006f * nextFloatRange(1f, -1f));
+//        try {
+//            setMeshes(StaticMeshesLoader.load("src/main/resources/models/cube.obj", "src/main/resources/models"));
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
     }
+
+    // todo set default mesh
+    public void setDefaultMesh() {
+                try {
+            setMeshes(StaticMeshesLoader.load("src/main/resources/models/cube.obj", "src/main/resources/models"));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+
+
 
 
 
@@ -136,7 +160,55 @@ public class Vehicle02 extends GameItem{
     }
 
 
+    public float getObjX() {
+        return objX;
+    }
 
+    public void setObjX(float objX) {
+        this.objX = objX;
+    }
 
+    public float getObjY() {
+        return objY;
+    }
 
+    public void setObjY(float objY) {
+        this.objY = objY;
+    }
+
+    public float getObjZ() {
+        return objZ;
+    }
+
+    public void setObjZ(float objZ) {
+        this.objZ = objZ;
+    }
+
+    public float getObjDx() {
+        return objDx;
+    }
+
+    public void setObjDx(float objDx) {
+        this.objDx = objDx;
+    }
+
+    public float getObjDy() {
+        return objDy;
+    }
+
+    public void setObjDy(float objDy) {
+        this.objDy = objDy;
+    }
+
+    public float getObjDz() {
+        return objDz;
+    }
+
+    public void setobjDz(float objDz) {
+        this.objDz = objDz;
+    }
+//
+//    public void setmesh(float objDz) {
+//        this.objDz = objDz;
+//    }
 }

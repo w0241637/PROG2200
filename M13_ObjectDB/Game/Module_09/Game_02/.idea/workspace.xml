@@ -57,7 +57,7 @@
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550235680874" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit3" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit3" value="junit.framework.TestCase" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/org/lwjglb/game" />
+    <property name="last_opened_file_path" value="$USER_HOME$/OneDrive - Nova Scotia Community College/ITProgramming/myRepos/PROG2200/Eclipse_WS/Module_13_Net3" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -254,6 +254,8 @@
       <workItem from="1637851284390" duration="2959000" />
       <workItem from="1638109173795" duration="5622000" />
       <workItem from="1638116327819" duration="22486000" />
+      <workItem from="1638231030161" duration="8527000" />
+      <workItem from="1638281059911" duration="17431000" />
     </task>
     <servers />
   </component>
@@ -281,18 +283,27 @@
           <properties field="pm" class="org.lwjglb.game.objectDBTest.ManageJDO" />
           <option name="timeStamp" value="3" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/lwjglb/game/DummyGame.java</url>
+          <line>797</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/lwjglb/game/DummyGame.java</url>
+          <line>882</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/lwjglb/game/DummyGame.java</url>
+          <line>567</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
         <watch expression="((_JdoUserException)e).stackTrace" custom="com.objectdb.o._JdoUserException" />
       </configuration>
-      <inline-watch fileUrl="file://$PROJECT_DIR$/src/main/java/org/lwjglb/game/objectdb_jdo_05/ManageJDO.java" line="28">
-        <watch expression="((ManageJDO)this).pm" language="JAVA" custom="org.lwjglb.game.objectdb_jdo_05.ManageJDO" />
-      </inline-watch>
-      <inline-watch fileUrl="file://$PROJECT_DIR$/src/main/java/org/lwjglb/game/objectdb_jdo_05/ManageJDO.java" line="28">
-        <watch expression="((ManageJDO)this).pm" language="JAVA" custom="org.lwjglb.game.objectdb_jdo_05.ManageJDO" />
-      </inline-watch>
     </watches-manager>
   </component>
 </project>
