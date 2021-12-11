@@ -6,11 +6,18 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * helper class for database
+ */
 public class dbHelper02 {
 
     private static Connection conn;
 //    Connection conn;
 
+    /**
+     * connect to database
+     * @throws SQLException
+     */
     public static synchronized void startDB() throws SQLException {
         try {
             System.out.println("startDB Good");
@@ -21,6 +28,10 @@ public class dbHelper02 {
         }
     }
 
+    /**
+     * create a table to hold Venicle02 properties
+     * @throws SQLException
+     */
     public static void createTable() throws SQLException {
         Statement st = null;
         st = conn.createStatement();
@@ -39,6 +50,11 @@ public class dbHelper02 {
         st.close();
     }
 
+
+    /**
+     * drop table
+     * @throws SQLException
+     */
     public static void dropTable() throws SQLException {
         Statement st = null;
         st = conn.createStatement();
@@ -56,6 +72,10 @@ public class dbHelper02 {
         st.close();
     }
 
+    /**
+     * insert some values for testing database input
+     * @throws SQLException
+     */
     public static synchronized void RowTest() throws SQLException {
         Statement st = null;
         st = conn.createStatement();
@@ -75,6 +95,17 @@ public class dbHelper02 {
         st.close();
     }
 
+    /**
+     * insert new Vehicle02 Object
+     * @param objType
+     * @param x
+     * @param y
+     * @param z
+     * @param dx
+     * @param dy
+     * @param dz
+     * @throws SQLException
+     */
     public static synchronized void insertRow(String objType, float x, float y, float z, float dx, float dy, float dz) throws SQLException {
         Statement st = null;
         st = conn.createStatement();
@@ -94,7 +125,10 @@ public class dbHelper02 {
     }
 
 
-
+    /**
+     * update by id
+     * @throws SQLException
+     */
     public static synchronized void update() throws SQLException {
         Statement st = null;
         st = conn.createStatement();
@@ -112,7 +146,10 @@ public class dbHelper02 {
         st.close();
     }
 
-
+    /**
+     * delete all rows from database
+     * @throws SQLException
+     */
     public static synchronized void deleteAllRows() throws SQLException {
         Statement st = null;
         st = conn.createStatement();
@@ -134,62 +171,13 @@ public class dbHelper02 {
 
 
 
-    public static synchronized void createObjs() throws SQLException{
-
-        List<Vehicle02> dbItems = new ArrayList<>();
-
-        Statement st = null;
-        ResultSet rs = null;
-
-        String statement = "SELECT * FROM game_table01";
-
-        st = conn.createStatement();
-
-
-        try {
-//            int i = st.executeUpdate(statement);  // run the query
-            rs = st.executeQuery(statement);
-            System.out.println("execute getAllRows() : ");
-
-
-            for (; rs.next(); ) {
-                System.out.print("\t" + rs.getInt(1) //id
-                        + "\t" + rs.getString(2) // type
-                        + "\t" + rs.getFloat(3) //x
-                        + "\t" + rs.getFloat(4) //y
-                        + "\t" + rs.getFloat(5)//z
-                        + "\t" + rs.getFloat(6)//dx
-                        + "\t" + rs.getFloat(7)//dy
-                        + "\t" + rs.getFloat(8)//dz
-                        + "\n");
 
 
 
-                DummyGame.addDbMeshOnScreen(
-                        rs.getString(2),
-                        rs.getFloat(3),
-                        rs.getFloat(4),
-                        rs.getFloat(5),
-                        rs.getFloat(6),
-                        rs.getFloat(7),
-                        rs.getFloat(8));
-            }
-
-            System.out.println("rs: "+rs);
-
-
-        } catch (SQLException sQLException) {
-            System.out.println("createObjs  failed :(");
-            System.out.println("rs: "+rs);
-            System.out.println("createObjs() db error : " + statement);
-        }
-
-        st.close();
-    }
-
-
-
-
+    /**
+     * print all values stored
+     * @throws SQLException
+     */
     public static synchronized void printAll() throws SQLException{
         Statement st = null;
         ResultSet rs = null;
@@ -229,7 +217,11 @@ public class dbHelper02 {
         st.close();
     }
 
-
+    /**
+     * gets objects stored in database and populates arraylist
+     * @return Arraylist of Vehicle02 Objects
+     * @throws SQLException
+     */
     public static synchronized ArrayList<Vehicle02> createObjs02() throws SQLException{
 
         ArrayList<Vehicle02> dbItems = new ArrayList<>();
@@ -285,6 +277,61 @@ public class dbHelper02 {
 
         return dbItems;
     }
+
+
+
+    //    public static synchronized void createObjs() throws SQLException{
+//
+//        List<Vehicle02> dbItems = new ArrayList<>();
+//
+//        Statement st = null;
+//        ResultSet rs = null;
+//
+//        String statement = "SELECT * FROM game_table01";
+//
+//        st = conn.createStatement();
+//
+//
+//        try {
+////            int i = st.executeUpdate(statement);  // run the query
+//            rs = st.executeQuery(statement);
+//            System.out.println("execute getAllRows() : ");
+//
+//
+//            for (; rs.next(); ) {
+//                System.out.print("\t" + rs.getInt(1) //id
+//                        + "\t" + rs.getString(2) // type
+//                        + "\t" + rs.getFloat(3) //x
+//                        + "\t" + rs.getFloat(4) //y
+//                        + "\t" + rs.getFloat(5)//z
+//                        + "\t" + rs.getFloat(6)//dx
+//                        + "\t" + rs.getFloat(7)//dy
+//                        + "\t" + rs.getFloat(8)//dz
+//                        + "\n");
+//
+//
+//
+//                DummyGame.addDbMeshOnScreen(
+//                        rs.getString(2),
+//                        rs.getFloat(3),
+//                        rs.getFloat(4),
+//                        rs.getFloat(5),
+//                        rs.getFloat(6),
+//                        rs.getFloat(7),
+//                        rs.getFloat(8));
+//            }
+//
+//            System.out.println("rs: "+rs);
+//
+//
+//        } catch (SQLException sQLException) {
+//            System.out.println("createObjs  failed :(");
+//            System.out.println("rs: "+rs);
+//            System.out.println("createObjs() db error : " + statement);
+//        }
+//
+//        st.close();
+//    }
 
 
 

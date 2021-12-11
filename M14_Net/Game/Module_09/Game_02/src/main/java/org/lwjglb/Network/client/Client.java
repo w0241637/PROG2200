@@ -11,8 +11,6 @@ import java.io.InputStreamReader;
 import java.io.ObjectInputStream;
 import java.net.Socket;
 
-import static org.lwjglb.game.DummyGame.scene;
-
 
 public class Client {
 
@@ -22,13 +20,14 @@ public class Client {
 		System.out.print(RunSocketClient());
 	}
 
+	/**
+	 * Get Vehicle02 object from server
+	 * @return
+	 */
 	public static String RunSocketClient() {
 		try {
 			System.out.println("Socket started up");
-//	        clnt = new Socket("192.168.0.194",4444);  // IP Address of the server
 			clnt = new Socket("192.168.0.164",4444);  // IP Address of the server
-
-//			BufferedReader in = new BufferedReader(new InputStreamReader(clnt.getInputStream()));
 
 			InputStream inputStream = clnt.getInputStream();
 
@@ -39,14 +38,13 @@ public class Client {
 			try {
 				Object obj01 = objIn.readObject();
 
-
 				System.out.println("here is obj01(from server) before casting: "+obj01);
 				Vehicle02 obj = (Vehicle02) obj01;
 //
 				obj.getObjX();
 				System.out.println(obj.getObjX());
 
-				//add on screen now
+
 				obj.setDefaultMesh();
 				obj.setRotateAndScale();
 				obj.setPosition(obj.getObjX(), obj.getObjY(), obj.getObjZ());
@@ -64,9 +62,6 @@ public class Client {
 
 				ManageJDO01 g = new ManageJDO01("Shapes01.odb");
 				g.saveNew(obj);
-
-
-
 
 
 			} catch (ClassNotFoundException e) {

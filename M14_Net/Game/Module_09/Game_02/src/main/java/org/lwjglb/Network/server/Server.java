@@ -11,22 +11,19 @@ import java.net.UnknownHostException;
 
 class Server {
 
-
+	/**
+	 * send object to Client
+	 * @param args
+	 */
 	public static void main(String[] args) {
 //	    String ip = "192.168.0.194";// getIpAddress();
 		String ip = "192.168.0.164";// getIpAddress();
 
 		String s = null;
 
-
-
-
-
-
 		System.out.println("Server IP => " + ip);
 
-//		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-//		Vehicle02 timcar = new Vehicle02("Vehicle02",1,2,3,0,0,0);
+
 		Vehicle02 timcar = new Vehicle02();
 
 
@@ -40,8 +37,6 @@ class Server {
 		timcar.setobjDz(0.005f * r.nextFloat());
 
 		System.out.print("Enter String to send to client => ");
-//					s = br.readLine();
-//		s = timcar.returnHello();
 
 
 		if (ip != "false") {
@@ -52,9 +47,6 @@ class Server {
 				try {
 
 					client = srvr.accept();  //Sit and wait
-
-
-
 
 
 					PrintWriter out = new PrintWriter(client.getOutputStream(), true);

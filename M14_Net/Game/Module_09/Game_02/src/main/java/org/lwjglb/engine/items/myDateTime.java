@@ -9,17 +9,26 @@ public class myDateTime {
 
     private static String rightNow;
 
+    /**
+     * set current time
+     */
     public static void setRightNow() {
         rightNow = dateTime();
     }
 
+    /**
+     * get current time
+     * @return
+     */
     public static String getRightNow(){
         return rightNow;
     }
 
 
-
-
+    /**
+     *
+     * @return String date and time
+     */
     public static String dateTime(){
         LocalDateTime myDateObj = LocalDateTime.now();
         System.out.println("Before formatting: " + myDateObj);
@@ -30,6 +39,10 @@ public class myDateTime {
         return formattedDate;
     }
 
+    /**
+     *
+     * @return String of time
+     */
     public static String justTime(){
         LocalDateTime myDateObj = LocalDateTime.now();
         System.out.println("Before formatting: " + myDateObj);

@@ -34,6 +34,12 @@ public class GameItem  extends Thread {
     private final double threshold = 1.1;
     private Vector3f slower = new Vector3f(1.1f, 1.1f, 1.1f);
 
+    /**
+     * set random float range
+     * @param min
+     * @param max
+     * @return
+     */
     public static float nextFloatRange(float min, float max) {
         return (new Random().nextFloat() * (max - min)) + min;
     }
@@ -45,19 +51,41 @@ public class GameItem  extends Thread {
 
 
 
-    //inherited functions
-    public void setAsNewest(){}
-    public void setAsOld(){}
+
+    /**
+     * increase velocity
+     */
     public void faster() {}
+
+    /**
+     * lower velocity
+     */
     public void slower() {}
+
+    /**
+     * increase position y
+     */
     public void up() {}
+
+    /**
+     * lower position y
+     */
     public void down() {}
+
+    /**
+     * increase x position
+     */
     public void left() {}
+
+    /**
+     * lower x position
+     */
     public void right() {}
 
 
-
-
+    /**
+     * constuctor
+     */
     public GameItem() {
         selected = false;
         position = new Vector3f(0, 0, 0);
@@ -71,20 +99,36 @@ public class GameItem  extends Thread {
         this.start();
     }
 
+    /**
+     * constructor
+     * @param mesh
+     */
     public GameItem(Mesh mesh) {
         this();
         this.meshes = new Mesh[]{mesh};
     }
 
+    /**
+     * constructor
+     * @param meshes
+     */
     public GameItem(Mesh[] meshes) {
         this();
         this.meshes = meshes;
     }
 
+    /**
+     * get position
+     * @return position
+     */
     public Vector3f getPosition() {
         return position;
     }
 
+    /**
+     * get position
+     * @return position as int
+     */
     public int getTextPos() {
         return textPos;
     }
@@ -93,6 +137,12 @@ public class GameItem  extends Thread {
         return selected;
     }
 
+    /**
+     * set position of this item
+     * @param x
+     * @param y
+     * @param z
+     */
     public final void setPosition(float x, float y, float z) {
         this.position.x = x;
         this.position.y = y;
@@ -100,6 +150,12 @@ public class GameItem  extends Thread {
 
     }
 
+    /**
+     * set velocity of this item, if all 0, set isStationary as true
+     * @param x
+     * @param y
+     * @param z
+     */
     public final void setVelocity(float x, float y, float z) {
         this.velocity.x = x;
         this.velocity.y = y;
@@ -107,47 +163,83 @@ public class GameItem  extends Thread {
         if ((x == 0) || (y == 0) || (z == 0)) {
             this.isStationary = true;  // zero velocity, this item is stationary
         }
-
-//        this.velocity.x = this.velocity.x - 1;
-//        this.velocity.y = this.velocity.y - 1;
     }
 
+    /**
+     * get scale
+     * @return
+     */
     public float getScale() {
         return scale;
     }
 
+    /**
+     * set scale
+     * @param scale
+     */
     public final void setScale(float scale) {
         this.scale = scale;
     }
 
+    /**
+     * get rotation
+     * @return
+     */
     public Quaternionf getRotation() {
         return rotation;
     }
 
+    /**
+     * set rotation
+     * @param q
+     */
     public final void setRotation(Quaternionf q) {
         this.rotation.set(q);
     }
 
+    /**
+     * set rotation velocity
+     * @param q
+     */
     public final void setRotationVel(Quaternionf q) {
         this.rotationVel.set(q);
     }
 
+    /**
+     * get mesh
+     * @return mesh
+     */
     public Mesh getMesh() {
         return meshes[0];
     }
 
+    /**
+     * get mesh
+     * @return meshes[]
+     */
     public Mesh[] getMeshes() {
         return meshes;
     }
 
+    /**
+     * set meshes
+     * @param meshes
+     */
     public void setMeshes(Mesh[] meshes) {
         this.meshes = meshes;
     }
 
+    /**
+     * set mesh
+     * @param mesh
+     */
     public void setMesh(Mesh mesh) {
         this.meshes = new Mesh[]{mesh};
     }
 
+    /**
+     * remove objects
+     */
     public void cleanup() {
         int numMeshes = this.meshes != null ? this.meshes.length : 0;
         for (int i = 0; i < numMeshes; i++) {
@@ -155,22 +247,37 @@ public class GameItem  extends Thread {
         }
     }
 
+    /**
+     * boolean is selected
+     * @param selected
+     */
     public void setSelected(boolean selected) {
         this.selected = selected;
     }
 
+    /**
+     * set position with integer type
+     * @param textPos
+     */
     public void setTextPos(int textPos) {
         this.textPos = textPos;
     }
 
+    /**
+     * @return boolean
+     */
     public boolean isInsideFrustum() {
         return insideFrustum;
     }
 
+    /**
+     * setter
+     * @param insideFrustum
+     */
     public void setInsideFrustum(boolean insideFrustum) {
         this.insideFrustum = insideFrustum;
     }
-    
+
     public boolean isDisableFrustumCulling() {
         return disableFrustumCulling;
     }
@@ -196,9 +303,7 @@ public class GameItem  extends Thread {
 
         }
     }
-//            while (!doesNotFall){
-//                this.gravity();
-//            }
+
     /**
      * Russ adde this method to nudge the items slightly.
      */
@@ -241,25 +346,41 @@ public class GameItem  extends Thread {
 //        gravity();
     }
 
+    /**
+     * reduce velocity a little
+     */
     public void floorSlow() {
                    this.velocity.y = this.velocity.y * 0.9f;
 //        this.velocity.y = this.velocity.y - 0.005f;
 
     }
 
-
+    /**
+     * Item does not move
+     */
     public void doesNotMove() {
         this.isStationary = true;
     }
 
+    /**
+     * unused method to prevent items from falling
+     */
     public void antiGravity(){
         this.doesNotFall = true;
     }
 
+    /**
+     * used to simulate gravity
+     */
     public void gravity(){
         this.velocity.y = this.velocity.y - 0.00005f; //comment out for class demo
     }
 
+    /**
+     * collision with another object.
+     * @param that
+     * @return
+     */
     public boolean DoesItCollide(GameItem that) {
 
         // Don't collide with itself
@@ -285,13 +406,13 @@ public class GameItem  extends Thread {
         this.velocity = this.velocity.mul(slower);
     }
 
+    /**
+     * bounce on collision in a random direction
+     */
     public void rebound(){
         this.velocity.x = -this.velocity.x + nextFloatRange(-0.0001f, 0);
         this.velocity.y = -this.velocity.y + nextFloatRange(-0.0001f, 0);
         this.velocity.z = -this.velocity.z + nextFloatRange(-0.0001f, 0);
-
-//        this.velocity = this.velocity.mul(slower);
-
 
 
     }

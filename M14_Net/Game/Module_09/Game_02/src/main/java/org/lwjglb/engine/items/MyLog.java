@@ -16,10 +16,16 @@ public class MyLog{
     private String pathName = "C:\\Users\\timot\\Desktop\\gameLogs\\Log_"+now+".csv";
     private int logCount = 1;
 
-
+    /**
+     * empty constructor
+     */
     private MyLog(){
     }
 
+    /**
+     * singleton pattern
+     * @return instance of class
+     */
     public synchronized static MyLog getInstance(){
         if(logInstance == null){
             setNow();
@@ -28,6 +34,10 @@ public class MyLog{
         return logInstance;
     }
 
+    /**
+     * write line to file
+     * @param data
+     */
     public void writeString(String data) {
         File file = new File(pathName);
         FileWriter fr = null;
@@ -51,32 +61,33 @@ public class MyLog{
         }
     }
 
-    public void test(){
-//        dateTime();
-        System.out.println("this thing on?");
-    }
 
-//    public String dateTime(){
-//        LocalDateTime myDateObj = LocalDateTime.now();
-//        System.out.println("Before formatting: " + myDateObj);
-//        DateTimeFormatter myFormatObj = DateTimeFormatter.ofPattern("dd-MM-yyyy_HH:mm:ss");
-//
-//        String formattedDate = myDateObj.format(myFormatObj);
-//        System.out.println("After formatting: " + formattedDate);
-//        return formattedDate;
-//    }
-//
+    /**
+     * get current date and time
+     */
     public static void setNow(){
         now = myDateTime.getRightNow();
     }
 
-
+    /**
+     * getter
+     * @return
+     */
     public int getLogCount() {
         return logCount;
     }
 
+    /**
+     * setter
+     * @param logCount
+     */
     public void setLogCount(int logCount) {
         this.logCount = logCount;
+    }
+
+    public void test(){
+//        dateTime();
+        System.out.println("this thing on?");
     }
 
 }

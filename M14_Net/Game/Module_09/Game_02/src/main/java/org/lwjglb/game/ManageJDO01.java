@@ -15,13 +15,19 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Properties;
 
+/**
+ * Database helper class
+ */
 public class ManageJDO01 {
 
     Properties properties;
     PersistenceManagerFactory pmf;
     PersistenceManager pm;
 
-
+    /**
+     * open a connection to database
+     * @param db_name
+     */
     public ManageJDO01(String db_name) {
         try {
             properties = new Properties();
@@ -34,7 +40,10 @@ public class ManageJDO01 {
         }
     }
 
-
+    /**
+     * save an object
+     * @param item
+     */
     public void saveNew(Object item) {
         // Make persistent
         try {
@@ -50,6 +59,10 @@ public class ManageJDO01 {
         }
     }
 
+    /**
+     * system print list of objects
+     * @param aClass
+     */
     public void dumpObjects(Class aClass) {
 
         // Get records
@@ -64,6 +77,11 @@ public class ManageJDO01 {
         }
     }
 
+    /**
+     * get objects on class
+     * @param aClass
+     * @return  list of objects
+     */
     public List<Object> getObjects(Class aClass) {
 
         List<Object> results;
@@ -107,7 +125,10 @@ public class ManageJDO01 {
         return results;
     }
 
-
+    /**
+     * remove items from database
+     * @param aClass
+     */
     public void emptyDB(Class aClass) {
 
         List<Object> vehicles = getObjects(aClass);
@@ -129,8 +150,9 @@ public class ManageJDO01 {
     }
 
 
-
-
+    /**
+     * close connection
+     */
     void close() {
         if (pm.currentTransaction().isActive()) {
             pm.currentTransaction().rollback();

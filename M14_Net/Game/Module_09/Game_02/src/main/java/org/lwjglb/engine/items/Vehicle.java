@@ -7,6 +7,10 @@ import org.lwjglb.engine.graph.Mesh;
 
 import java.util.Random;
 
+/**
+ * class used for testing- unused in project
+ * see Vehicle02.java class
+ */
 public class Vehicle extends GameItem{
 
 

@@ -128,10 +128,9 @@ public class DummyGame implements IGameLogic {
 
         dbHelper02.startDB();
 
-dbHelper02.createTable();
+        dbHelper02.createTable();
 
         // todo switch between ObjectDB and SQLite here
-
 //        startSQLdbObjects();   // this for SQLite/HSQLDB
         startJdoObjects();      // this for ObjectDB
 

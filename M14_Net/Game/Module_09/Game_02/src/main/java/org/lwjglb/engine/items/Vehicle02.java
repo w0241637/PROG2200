@@ -15,17 +15,6 @@ import java.util.Random;
 
 @Entity
 public class Vehicle02 extends GameItem implements Serializable {
-    public Vehicle02() {
-    }
-
-    public Vehicle02(String objType, float x, float y, float z, float dx, float dy, float dz) {
-    }
-
-    public Vehicle02(Mesh[] addMesh) {
-        super(addMesh);
-        setPosition(nextFloatRange(10.00f, -10.0f), 8.f, nextFloatRange(10.00f, -10.0f));
-        setVelocity(0.006f * nextFloatRange(1f, -1f), 0.000001f, 0.006f * nextFloatRange(1f, -1f));
-    }
 
     public boolean testingObject = false;
 
@@ -36,6 +25,35 @@ public class Vehicle02 extends GameItem implements Serializable {
     public String objType = "Vehicle02";
 
     public float objX,objY,objZ,objDx,objDy,objDz;
+
+    /**
+     * empty constructor
+     */
+    public Vehicle02() {
+    }
+
+    /**
+     * constructor for SQL Databases
+     * @param objType
+     * @param x
+     * @param y
+     * @param z
+     * @param dx
+     * @param dy
+     * @param dz
+     */
+    public Vehicle02(String objType, float x, float y, float z, float dx, float dy, float dz) {
+    }
+
+    /**
+     * Constructor
+     * @param addMesh
+     */
+    public Vehicle02(Mesh[] addMesh) {
+        super(addMesh);
+        setPosition(nextFloatRange(10.00f, -10.0f), 8.f, nextFloatRange(10.00f, -10.0f));
+        setVelocity(0.006f * nextFloatRange(1f, -1f), 0.000001f, 0.006f * nextFloatRange(1f, -1f));
+    }
 
     /**
      * getter
