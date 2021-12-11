@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="-62.0" y="-15.5">com</node>
+    <node x="-72.0" y="-15.5">models</node>
+    <node x="-71.5" y="-15.5">images</node>
+    <node x="-77.0" y="-15.5">netscape</node>
+    <node x="-62.0" y="-15.5">junit</node>
+    <node x="-72.5" y="-15.5">shaders</node>
+    <node x="-73.5" y="-15.5">textures</node>
+    <node x="-59.0" y="-15.5">org</node>
+    <node x="-122.5" y="-15.5">toolbarButtonGraphics</node>
+    <node x="-58.5" y="-15.5">sun</node>
+    <node x="-57.5" y="-15.5">jdk</node>
+    <node x="-81.0" y="-15.5">META-INF</node>
+    <node x="-101.0" y="-15.5">groovyjarjarasm</node>
+    <node x="-61.0" y="-15.5">java</node>
+    <node x="-70.5" y="-15.5">groovy</node>
+    <node x="-70.5" y="-15.5">sounds</node>
+    <node x="-64.0" y="-15.5">fonts</node>
+    <node x="-64.5" y="-15.5">javax</node>
+    <node x="-109.5" y="-15.5">groovyjarjarpicocli</node>
+    <node x="152.5" y="196.5">groovyjarjarcommonscli</node>
+    <node x="275.5" y="342.5">groovyjarjarantlr</node>
+  </nodes>
+  <notes />
+  <edges />
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="false" x="629.0" y="399.0" />
+  <SelectedNodes>
+    <node>groovyjarjarcommonscli</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
